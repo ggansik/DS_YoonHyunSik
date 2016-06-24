@@ -443,6 +443,7 @@ class DB(userVertex):
 
     def removeUser(self):
         targettweet = input("Enter the word: ")
+        print("deleted user: ", end="")
         removeduser = []
         for user in self.userVertexList:
             if targettweet in user.tweets:
